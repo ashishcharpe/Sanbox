@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import Base.TestBase;
 
 public class PaymentPage extends TestBase {
-
+ // we have to push this code on local 
 	// Object repository
 	@FindBy(xpath = "//a[@class='select-card payment-options']")private WebElement tarjeta;
 	@FindBy(xpath = "//label[@for='radio-c']")private WebElement usar_nueva_tarjeta;
@@ -71,7 +71,7 @@ public class PaymentPage extends TestBase {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView();", link);
 		Thread.sleep(2000);
-		captcha_chkBox.click();
+		//captcha_chkBox.click();
 		Thread.sleep(2000);
 		submit_Btn.click();
 		
