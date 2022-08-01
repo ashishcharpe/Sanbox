@@ -25,9 +25,9 @@ public class PaymentPage extends TestBase {
 	@FindBy(xpath = "//button[@id='paylimit']")private WebElement pagar_con_tarjeta_Btn;
 	@FindBy(xpath = "//input[@id='usrname']")private WebElement popup_mail_TextBox;
 	@FindBy(xpath = "//input[@id='psw']")private WebElement popup_pswd_TextBox;
-	//@FindBy(xpath = "not getting xpath")private WebElement captcha_chkBox;
+	//@FindBy(xpath = "not getting xpath")private WebElement captcha_chkBox; // find x path by axes 
 	@FindBy(xpath = "//button[@type='submit']")private WebElement submit_Btn;
-	@FindBy(xpath = "//a[text()='¿Olvidaste tu contraseña?']")private WebElement link;
+	@FindBy(xpath = "//a[text()='Â¿Olvidaste tu contraseÃ±a?']")private WebElement link;
 	public PaymentPage()
 	{
 		PageFactory.initElements(driver, this);
